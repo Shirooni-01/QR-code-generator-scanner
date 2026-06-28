@@ -90,7 +90,7 @@ No installation required.
 ---
 
 ---
-## LIVE AT : 
+## LIVE AT : https://shirooni-01.github.io/QR-code-generator-scanner/
 
 ## 👨‍💻 Author
 
