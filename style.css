@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: .25s;
+}
+
+input:focus {
+    border-color: #4a7dff;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+button {
+    flex: 1;
+    min-width: 120px;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #4a7dff;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+button:hover {
+    background: #3366e8;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#qrBox {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 260px;
+    border: 2px dashed #d8d8d8;
+    border-radius: 14px;
+    background: #fafafa;
+}
+
+#qrcode img,
+#qrcode canvas {
+    display: block;
+    max-width: 100%;
+}
+
+#reader {
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.result {
+    margin-top: 25px;
+}
+
+.result h3 {
+    margin-bottom: 12px;
+}
+
+textarea {
+    width: 100%;
+    height: 110px;
+    resize: none;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #4a7dff;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: .95rem;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 14px;
+    }
+
+    #qrBox {
+        min-height: 220px;
+    }
+
+}

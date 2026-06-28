@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator & Scanner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- QR Code Generator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- QR Code Scanner -->
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>QR Code Generator & Scanner</h1>
+        <p class="subtitle">Generate, download, share and scan QR codes easily.</p>
+
+        <!-- =======================
+             GENERATOR SECTION
+        ======================== -->
+
+        <div class="card">
+
+            <h2>Generate QR Code</h2>
+
+            <input
+                type="text"
+                id="qrInput"
+                placeholder="Enter text or URL..."
+            >
+
+            <div class="button-group">
+
+                <button id="generateBtn">
+                    Generate
+                </button>
+
+                <button id="downloadBtn">
+                    Download
+                </button>
+
+                <button id="shareBtn">
+                    Share
+                </button>
+
+            </div>
+
+            <div id="qrBox">
+                <div id="qrcode"></div>
+            </div>
+
+        </div>
+
+
+        <!-- =======================
+             SCANNER SECTION
+        ======================== -->
+
+        <div class="card">
+
+            <h2>Scan QR Code</h2>
+
+            <button id="scanBtn">
+                Start Scanner
+            </button>
+
+            <div id="reader"></div>
+
+            <div class="result">
+
+                <h3>Scanned Result</h3>
+
+                <textarea
+                    id="resultText"
+                    readonly
+                    placeholder="Scanned content will appear here..."
+                ></textarea>
+
+                <div class="button-group">
+
+                    <button id="copyBtn">
+                        Copy
+                    </button>
+
+                    <button id="openBtn">
+                        Open Link
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
